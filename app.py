@@ -18,7 +18,7 @@ from werkzeug.utils import secure_filename
 # spreadsheet
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
-credentials= ServiceAccountCredentials.from_json_keyfile_name('C:/Users/user/Datasets/cred.json',scope)
+credentials= ServiceAccountCredentials.from_json_keyfile_name('C:/Users/user/Desktop/attendance1/cred.json',scope)
 
 client = gspread.authorize(credentials)
 sheet = client.open("Register Sheet").sheet1
